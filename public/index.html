@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DailyNews | Latest Headlines</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Daily<span>News.</span></a>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#latest">Latest News</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">THE WORLD AT YOUR FINGERTIPS</span>
+
+                <h1>Stay Informed.<br>
+                    <span>Stay Ahead.</span>
+                </h1>
+
+                <p>
+                    Discover the latest stories, breaking headlines
+                    and trending topics from around the world.
+                </p>
+
+                <form class="search-box" id="searchForm">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search for news, topics..."
+                    >
+
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="categories section" id="categories">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">EXPLORE</span>
+                    <h2>Browse Categories</h2>
+                </div>
+            </div>
+
+            <div class="category-list">
+
+                <button class="category active"
+                    data-category="general">All News</button>
+
+                <button class="category"
+                    data-category="technology">Technology</button>
+
+                <button class="category"
+                    data-category="business">Business</button>
+
+                <button class="category"
+                    data-category="sports">Sports</button>
+
+                <button class="category"
+                    data-category="entertainment">Entertainment</button>
+
+                <button class="category"
+                    data-category="science">Science</button>
+
+            </div>
+        </section>
+
+        <section class="news-section section" id="latest">
+
+            <div class="section-heading news-heading">
+                <div>
+                    <span class="eyebrow">LATEST UPDATES</span>
+                    <h2 id="newsTitle">Top Headlines</h2>
+                    <p>Stay connected with what's happening.</p>
+                </div>
+
+                <button class="refresh-btn" id="refreshBtn">
+                    ↻ Refresh
+                </button>
+            </div>
+
+            <div id="newsContainer" class="news-grid">
+                <div class="message">Loading news...</div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#" class="logo">Daily<span>News.</span></a>
+        <p>Your daily source of information.</p>
+        <p class="copyright">
+            © 2026 DailyNews. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
